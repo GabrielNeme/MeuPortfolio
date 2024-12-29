@@ -1,0 +1,390 @@
+body,
+h1,
+h2,
+p,
+ul,
+li,
+a,
+img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background-color: #000000;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.floating-nav {
+    position: fixed;
+    top: 87%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.floating-nav a {
+    background: #1b1b1b;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.floating-nav a:hover {
+    background: #015b7f;
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+/*********************************************************************** Introdução **********************************************************************/
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    padding: 60px 30px;
+    background-image: url("/images/Papeldeparede.jpg");
+    filter: grayscale(20%);
+    color: #fff;
+    animation: fadeIn 3s ease-out;
+}
+
+.hero-content {
+    display: flex;
+    margin: 0 auto;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.hero-text {
+    flex: 1;
+    background-color: #1616169c;
+    padding: 50px;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 100px;
+    max-width: 700px;
+    animation: jump 1s ease-in-out infinite;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    animation: fadeIn 3s ease-out;
+}
+
+.hero-image {
+    margin-top: -70px;
+    margin-left: 250px;
+    animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/********************************************************************** Sobre Mim ************************************************************************/
+.about {
+    height: 100vh;
+    padding: 40px 30px;
+    color: #ffffff;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 1100px;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    text-align: justify;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Habilidades */
+.skills {
+    margin-top: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 650px;
+    color: #ffffff;
+}
+
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.kotlin-img {
+    filter: grayscale(100%); 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.kotlin-img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.skills-icons .skill i {
+    font-size: 55px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: #ababab;
+}
+
+/* Cores para as tecnologias */
+.skills-icons .skill i.fa-html5:hover {
+    color: #E34F26;
+}
+
+.skills-icons .skill i.fa-css3-alt:hover {
+    color: #1572B6;
+}
+
+.skills-icons .skill i.fa-js-square:hover {
+    color: #F7DF1E;
+}
+
+.skills-icons .skill i.fa-react:hover {
+    color: #61DAFB;
+}
+
+.skills-icons .skill i.fa-golang:hover {
+    color: #00ADD8;
+}
+
+.skills-icons .skill i.fa-java:hover {
+    color: #007fa6;
+}
+
+.skills-icons .skill i.fa-python:hover {
+    color: #3776AB;
+}
+
+.skills-icons .skill i.fa-node:hover {
+    color: #609e5b;
+}
+
+.skills-icons .skill i:hover {
+    transform: scale(1.1);
+}
+
+.skill {
+    width: 100px;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.skill p {
+    text-align: center;
+    font-size: 16px;
+}
+
+/*********************************************************************** Projetos ************************************************************************/
+.projects {
+    height: 130vh;
+    padding: 60px 30px;
+    color: #333;
+    animation: fadeIn 2s ease-out;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.project-info {
+    padding: 20px;
+    margin-top: -30px;
+    text-align: center;
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project .btn {
+    display: inline-block;
+    background: #5f5f5f;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.project .btn:hover {
+    background: #333;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/********************************************************************** Contato **************************************************************************/
+.contact {
+    height: 90vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    animation: fadeIn 2s ease-out;
+}
+
+.container2 {
+    background-color: #696969;
+    border-radius: 30px;
+    padding: 20px;
+    height: auto;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contato-icon {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.contato-icon i {
+    font-size: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contato-icon i:hover {
+    transform: scale(1.2);
+}
+
+.contato-icon a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contato-icon a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}

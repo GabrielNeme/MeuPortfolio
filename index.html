@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Gabriel Neme</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+    <script defer src="scripts/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="fade-in">Bem-vindo ao meu Portfólio</h1>
+                <p>Desenvolvedor Full-Stack</p>
+            </div>
+            <div id="3d-container"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2 class="fade-in">Sobre Mim</h2>
+                <p class="fade-in-delay">Olá! Meu nome é Gabriel Neme. Sou estudante de programação com uma base sólida
+                    em Python, Java e Go. Atualmente, estou buscando uma oportunidade de emprego na área de
+                    Desenvolvimento Back-End. Tenho um grande interesse em aprender e crescer profissionalmente em um
+                    ambiente colaborativo, onde posso aplicar meus conhecimentos técnicos para resolver problemas
+                    desafiadores e contribuir para o desenvolvimento de soluções inovadoras.
+                    <br>
+                    Estou sempre em busca de aprimorar minhas habilidades, com foco em desenvolvimento web e dispositivos móveis 
+                    (tanto em Back-End quanto em Front-End). Tenho experiência acadêmica no desenvolvimento de sistemas e sou apaixonado por
+                    aprender novas tecnologias e boas práticas de programação. Acredito que trabalhar em equipe é
+                    essencial para a criação de projetos de software de alta qualidade, e estou comprometido em oferecer
+                    minha contribuição para alcançar esse objetivo.
+                </p>
+            </div>
+            <div class="skills fade-in-delay">
+                <h2>Minhas Habilidades</h2>
+                <div class="container">
+                    <div class="skills-icons">
+                        <div class="skill">
+                            <i class="fab fa-html5"></i>
+                            <p>HTML</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-css3-alt"></i>
+                            <p>CSS</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-js-square"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-react"></i>
+                            <p>React</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-golang"></i>
+                            <p>Go</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-java" style="margin-top: -5px"></i>
+                            <p style="margin-top: 7px;">Java</p>
+                        </div>
+                        <div class="skill">
+                            <img src="images/Kotlin_Icon.png" alt="Kotlin" class="kotlin-img" style="margin-top: 3px; width: 38px; height: 42px;">
+                            <p style="margin-top: 3.5px;">Kotlin</p>
+                        </div>
+                        <div class="skill">
+                            <img src="images/Python_Icon.png" alt="Kotlin" class="kotlin-img" style="margin-top: -9px; width: 60px; height: 65px;">
+                            <p style="margin-top: -8px;">Python</p>
+                        </div>
+                        <div class="skill">
+                            <i class="fab fa-node"></i>
+                            <p>Node.js</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+     
+    <section class="projects" id="projects">
+        <h2 class="fade-in">Meus Projetos</h2>
+        <div class="project-list">
+            <div class="project slide-in">
+                <img src="/images/TattoFaz.jpg" alt="TattoFaz">
+                <div class="project-info">
+                    <h3>TattoFaz</h3>
+                    <p>Descrição do projeto com destaque para as tecnologias utilizadas e o impacto gerado.</p>
+                    <a href="https://www.figma.com/proto/K6AitV1DFciMN8llJK2Iys/Figma-basics?node-id=1669-162202&t=HHBahyMUBfPdehdH-1" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="project slide-in">
+                <img src="/images/Comparando.jpg" alt="Comparando">
+                <div class="project-info">
+                    <h3>Comparando</h3>
+                    <p>Descrição do projeto com destaque para as tecnologias utilizadas e o impacto gerado.</p>
+                    <a href="#" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="project slide-in">
+                <img src="/images/PetTime.jpg" alt="PetTime">
+                <div class="project-info">
+                    <h3>PetTime</h3>
+                    <p>Descrição do projeto com destaque para as tecnologias utilizadas e o impacto gerado.</p>
+                    <a href="#" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="project slide-in">
+                <img src="/images/BarberShop.jpg" alt="BarberShop">
+                <div class="project-info">
+                    <h3>BarberShop</h3>
+                    <p>Descrição do projeto com destaque para as tecnologias utilizadas e o impacto gerado.</p>
+                    <a href="#" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="project slide-in">
+                <img src="/images/ConversorDeMoedas.jpg" alt="ConversorDeMoedas">
+                <div class="project-info">
+                    <h3>Conversor de Moedas</h3>
+                    <p>Descrição do projeto com destaque para as tecnologias utilizadas e o impacto gerado.</p>
+                    <a href="Projetos/Conversor de Moedas/index.html" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="project slide-in">
+                <img src="/images/JoKenPo.jpg" alt="JoKenPo">
+                <div class="project-info">
+                    <h3>JoKenPo</h3>
+                    <p>Descrição do projeto com destaque para as tecnologias utilizadas e o impacto gerado.</p>
+                    <a href="#" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="project slide-in">
+                <img src="/images/JogoDaMemória.jpg" alt="TattoFaz">
+                <div class="project-info">
+                    <h3>MemoryGame</h3>
+                    <p>Descrição do projeto com destaque para as tecnologias utilizadas e o impacto gerado.</p>
+                    <a href="Projetos/Jogo de Memória/index.html" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="project slide-in">
+                <img src="/images/JogoDaVelha.jpg" alt="JogoDaVelha">
+                <div class="project-info">
+                    <h3>Jogo da Velha</h3>
+                    <p>Descrição do projeto com destaque para as tecnologias utilizadas e o impacto gerado.</p>
+                    <a href="Projetos/Jogo da Velha/index.html" class="btn">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contato</h2>
+          <div class="container2">
+            <ul>
+                <div class="contato-icon">
+                    <i class="fas fa-phone" style="margin-left: -70px;"></i> (11) 943434-8570
+                    <br>
+                    <i class="fas fa-envelope"></i> nemeegabriel@gmail.com
+                    <br>
+                    <i class="fas fa-map-marker-alt" style="margin-left: -95px;"></i>&nbspSão Paulo, SP
+                    <br>
+                    <i class="fab fa-github" style="margin-left: -110px;"></i> <a href="https://github.com/GabrielNeme"
+                        target="_blank">GabrielNeme</a>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+    <nav class="floating-nav">
+        <a href="#about" aria-label="Sobre mim"><i class="fas fa-user"></i></a>
+        <a href="#projects" aria-label="Meus projetos"><i class="fas fa-briefcase"></i></a>
+        <a href="#contact" aria-label="Contato"><i class="fas fa-envelope"></i></a>
+    </nav>
+
+    <footer>
+        <p>&copy; 2024 Gabriel Neme - Desenvolvedor Full-Stack</p>
+    </footer>
+</body>
+
+</html>
