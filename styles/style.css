@@ -63,7 +63,9 @@ a {
     align-items: center;
     height: 90vh;
     padding: 60px 30px;
-    background-image: url("/images/Papeldeparede.jpg");
+    background-image: url("https://i.ibb.co/XJcM965/Papeldeparede.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
     filter: grayscale(20%);
     color: #fff;
     animation: fadeIn 3s ease-out;
